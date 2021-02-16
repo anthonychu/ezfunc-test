@@ -30,7 +30,7 @@ jobs:
           app_location: "/site" # App source code path
           api_location: "/functions" # Api source code path - optional
           output_location: "" # Built app content directory - optional
-          api_build_command: npm i && npx anthonychu/ezfunc#main generate
+          api_build_command: npm i && npm run build && npx anthonychu/ezfunc#main generate
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
