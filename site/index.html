@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="date"></div>
-    <button id="getDate"></button>
+    <button id="getDate">Click me</button>
     <script>
         document.getElementById("getDate").addEventListener("click", async function() {
             const dateString = await (await fetch("/api/getDate")).text()
